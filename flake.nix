@@ -15,7 +15,7 @@
 				cppfront =
 					pkgs.stdenv.mkDerivation rec {
 						pname = "cppfront";
-						version = "20231011";
+						version = "20231124";
 
 						src = pkgs.fetchFromGitHub {
 							owner = "hsutter";
@@ -60,6 +60,7 @@
 						cargo
 						clippy
 						rustfmt
+						rust-analyzer
 						
 						pkgs.gnumake
 						stdenv
