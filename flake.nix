@@ -12,6 +12,9 @@
 				custom-haskell = pkgs.ghc.withPackages(p: with p; [
 					split
 					haskell-language-server
+					BNFC
+					alex
+					happy
 				]);
 				cppfront =
 					pkgs.stdenv.mkDerivation rec {
