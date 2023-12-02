@@ -10,6 +10,7 @@
 				pkgs = nixpkgs.legacyPackages.${system};
 				lib = nixpkgs.lib;
 				custom-haskell = pkgs.ghc.withPackages(p: with p; [
+					split
 					haskell-language-server
 				]);
 				cppfront =
@@ -61,6 +62,8 @@
 						clippy
 						rustfmt
 						rust-analyzer
+
+						hyperfine
 						
 						pkgs.gnumake
 						stdenv
